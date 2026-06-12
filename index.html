@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="imgs/panda.png!sw800">
+</head>
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#f5f5f5;
+    color:#060706;
+}
+
+/* NAVBAR */
+.navbar{
+    position: fixed;
+    width:90%;
+    max-width:1200px;
+    position: fixed;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 90%;
+
+    padding: 15px 30px;
+
+    background: #053113;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+    background:#053113;
+
+    border-radius: 20px;
+    
+}
+
+.navbar h1{
+    font-size:24px;
+    color:#13e009;
+}
+
+.navbar ul{
+    display:flex;
+    align-items:center;
+    gap:25px;
+    list-style:none;
+}
+
+.navbar a{
+    text-decoration:none;
+    color:#16e119;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.navbar a:hover,
+.navbar .active{
+    color:#e1e3e5;
+    background-color: #000;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Hero */
+
+.hero{
+    width: 99%;
+    min-height:85vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:70px;
+    align-items: center;
+}
+
+.hero-content{
+    margin-top: 150px;
+    flex: 1;
+    margin-left: 80px;
+}
+
+.badge{
+    display:inline-block;
+    background:#fff;
+    padding:8px 15px;
+    border-radius:20px;
+    font-size:13px;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+.hero-content h1{
+    font-size:4rem;
+    margin:20px 0;
+    line-height:1.1;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.hero-content h2{
+    font-size:2rem;
+    margin-bottom:15px;
+}
+
+.hero-content p{
+    max-width:500px;
+    color:#555;
+    margin-bottom:25px;
+}
+
+
+.buttons{
+    display:flex;
+    gap:15px;
+    margin-bottom:30px;
+}
+
+.btn{
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:30px;
+    font-weight:500;
+}
+
+.dark{
+    background:#063721;
+    color:#16e119;
+}
+
+.light{
+    background-color: #053113;
+    border:1px solid #000;
+    color:#06f039;
+}
+
+hr{
+    margin:30px 0;
+}
+
+.hero-image{
+    flex:1;
+    text-align:center;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:420px;
+    border: 3px solid rgb(9, 73, 35);
+    border-radius: 360px;
+}
+
+.list {
+    display: flex;
+    gap: 80px;
+    margin: 50px;
+}
+
+span {
+    background-color: #0c3d1b;
+    padding: 50px;
+    align-items: center;
+    width: 280px;
+    border-radius: 30px;
+    color: #06f039;
+    margin: 20px;
+}
+
+/* Footer */
+
+
+</style>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <h1 ><i class="fa-solid fa-code"></i>   Dicky Antonion</h1>
+        <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">Forum</a></li>
+            <li><a href="#">Resources</a></li>
+            <a href="#"><i class="fa-solid fa-id-card-clip"></i></a>
+        </ul>
+    </nav>
+
+    <!-- First Section -->
+    <section class="hero">
+
+        <!-- Left Side -->
+        <div class="hero-content">
+
+            <span class="badge">
+               <i class="fa-solid fa-star"></i> Established in 2024
+            </span>
+
+            <h1>
+                Engineering the future of web together
+            </h1>
+
+            <p>
+                Welcome to My Offcial Dicky Antonion Web,
+                I am a students who is very passionate about to become a 
+                software engineer.If you are intresting in this program you can join our community.
+            </p>
+
+
+            <div class="buttons">
+                <a href="#" class="btn dark">
+                    Join Our Community
+                </a>
+
+                <a href="#" class="btn light">
+                    Explore More
+                </a>
+            </div>
+
+
+        </div>
+
+        <!-- Right Side -->
+        <div class="hero-image">
+            <img src="imgs/my.jpg" alt="Profile">
+        </div>
+
+    </section>
+
+    <hr>
+    <br>
+
+    <footer class="list" >
+        <span>
+            <h3>Students</h3>
+            <p> Around 7800+ students</p>
+        </span>
+
+
+        <span>
+            <h3>
+                Member
+            </h3>
+            <p>Over 1200 members</p>
+        </span>
+
+        <span>
+            <h3>Rating</h3>
+            <p>4.8 stars</p>
+        </span>
+
+    </footer>
+
+</body>
+</html>
